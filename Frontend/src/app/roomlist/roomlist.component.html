@@ -1,18 +1,35 @@
-<h1>Available Room :</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body style="background-color:#4682B4;">
 
-<table>
-  <tr>
-    <td>Unit Name</td>
-    <td>M2</td>
-    <td>Price (US$)</td>
-    <td>Picture</td>
-    <td>Book</td>
-  </tr>
-  <tr *ngFor="let r of roomList">
-  <td>{{ r.Unit_Name }}</td>
-  <td>{{ r.Unit_Area }}</td>
-  <td>{{ r.Unit_Price }}</td>
-  <td>{{ r.Unit_Img }}</td>
-  <td><button class="btn btn-primary" (click)="bookUnit(r.Unit_ID)">Book</button></td>
-  </tr>
-</table>
+<div class="tengah" style="background-color:#696969; width:300px; height:300px; text-align:center; color:white;">
+
+    <h1>Available Room :</h1>
+    
+    <table>
+      <tr>
+        <td>Unit Name</td>
+        <td>M2</td>
+        <td>Price (US$)</td>
+        <td>Picture</td>
+        <td>Book</td>
+      </tr>
+      <tr *ngFor="let r of roomList">
+      <td>{{ r.Unit_Name }}</td>
+      <td>{{ r.Unit_Area }}</td>
+      <td>{{ r.Unit_Price }}</td>
+      <td>{{ r.Unit_Img }}</td>
+      <td><button class="btn btn-primary" (click)="bookUnit(r.Unit_ID)">Book</button></td>
+      </tr>
+    </table>
+
+</div>
+
+</body>
+</html>
